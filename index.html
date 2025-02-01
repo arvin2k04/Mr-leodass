@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baala Aravinth SJ- Portfolio</title>
+    <style>
+       
+        /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: url('electronics-background.jpg') no-repeat center center fixed; /* Add your electronics theme background image */
+    background-size: cover;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3, p {
+    transition: color 0.3s ease;
+}
+
+header {
+    background: rgba(10, 10, 10, 0.8);
+    color: #fcf9f9;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fdfafa;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f9c74f;
+    transform: scale(1.1);
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+section {
+    padding: 3rem;
+    max-width: 1700px;
+    margin: 3rem auto;
+    background: rgba(54, 54, 54, 0.8);
+    border-radius: 19px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-in-out;
+}
+
+.about img:hover {
+    transform: rotate(15deg);
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+}
+
+/* Skills List */
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.skills ul li {
+    background: rgba(10, 10, 10, 0.8);
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skills ul li:hover {
+    background: #f9c74f;
+    transform: translateY(-5px);
+}
+
+/* Hackathons Section */
+.hackathons h3 {
+    color: #69bbe1;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.hackathons p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact a {
+    color: #432193;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgb(9, 5, 5);
+    color: #ffFF;
+    font-size: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #3629ab;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about img {
+        width: 180px;
+        height: 180px;
+    }
+    .projects img {
+        width: 100%;
+    }
+    footer .social-links {
+        margin-top: 1rem;
+    }
+}
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>BAALA ARAVINTH SJ</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hackathons">Hackathons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="me.jpg" alt="Your Photo"> <!-- Replace with your photo -->
+        <p>Hello! I am <strong>Baala Aravinth SJ</strong>, I’m a passionate Electronics engineer . I’m a self-motivated person who is always interested in
+            learning new technologies and frameworks. I’m a team player and I can also work independently. I’m a quick learner and I’m always ready to take up new challenges.
+            </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>IoT</li>
+            <li>Python</li>
+            <li>Arduino Programming</li>
+            <li>PCB Designing</li>
+            <li>Machine Learning</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div>
+            <p>1. Smart Home Automation System</p>
+            <p>Developed a home automation system using IoT to control appliances remotely.</p>
+            <p>2. Energy-Efficient LED System </p>
+            <p>Designed an energy-efficient LED lighting system controlled by Arduino.</p>
+            
+        </div>
+       
+    </section>
+
+    <section id="hackathons" class="hackathons">
+        <h2>Hackathons</h2>
+        <div>
+            <h3>Malware Analysis Hackathon</h3>
+            <p>Participated in the Malware Analysis Hackathon 2024 at IIT Madras, conducted by Cystar.
+                Analyzed and identified malware behaviors using reverse engineering and threat detection tools.
+                Developed strategies to mitigate malware threats, showcasing expertise in cybersecurity techniques and tools.
+                Collaborated in a team environment to present innovative solutions for real-world malware challenges.</p>
+        </div>
+       
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: 727823tuec018@skct.edu.in</p>
+        <p>Phone: +91-9943164974</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/baala-aravinth-sj-8b2803290" target="_blank">My Profile</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BAALA ARAVINTH SJ. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
